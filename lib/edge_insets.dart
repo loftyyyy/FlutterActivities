@@ -12,8 +12,10 @@ class EdgeInset extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Edge Insets Activity 4 Jornadal"),
-          backgroundColor: Colors.pink,
+          title: Text("Edge Insets Task 4 Jornadal",
+          style: TextStyle(color: Colors.white),
+          ),
+          backgroundColor: const Color.fromARGB(255, 42, 1, 6)
         ),
         body: Center(
           child: Column(
