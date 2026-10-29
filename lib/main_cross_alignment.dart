@@ -12,17 +12,39 @@ class MCAlignment extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Main Cross Alignment Task 5 Jornadal",
-          style: TextStyle(color: Colors.white),
-        ) ,
-          backgroundColor: const Color.fromARGB(255, 42, 1, 6)
+          title: const Text(
+            "Task 5 - Jornadal",
+            style: TextStyle(color: Colors.white),
+          ),
+          backgroundColor: const Color.fromARGB(255, 42, 1, 6),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                "MainAxisAlignment.center",
+                style: TextStyle(fontSize: 13),
+              ),
+              const SizedBox(height: 8),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  containerBuilder(Colors.red),
+                  containerBuilder(Colors.yellow),
+                  containerBuilder(Colors.blue),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
-      body: Center(
-        
-      ),
-
-    ),
-      
     );
   }
 }
+
+Widget containerBuilder(Color color) => Container(
+  height: 70,
+  width: 70,
+  color: color,
+);
