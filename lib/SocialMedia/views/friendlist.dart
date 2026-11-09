@@ -18,7 +18,7 @@ class Friendlist extends StatelessWidget {
         Padding(padding: const EdgeInsets.all(8.0), child: Text(friend.name)),
       ],
     ),
-  )
+  );
 
   Widget friendsListGrid() => GridView.builder(
     shrinkWrap: true,
@@ -32,7 +32,22 @@ class Friendlist extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column()
+    return Column(
+      children: [
+        const SizedBox(height: 10,),
+        Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: Row(
+            children: [
+              Text('Friends', style: followTextStyle)
+            ],
+          ), 
+        ),
+        const SizedBox(height: 10,),
+        SizedBox(height: 380, child: friendsListGrid()),
+        SizedBox(height: 10, child: Container(color: Colors.grey,),)
+      ],
+    );
   }
 
 }
