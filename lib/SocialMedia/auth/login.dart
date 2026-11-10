@@ -1,3 +1,4 @@
+import 'package:activities/SocialMedia/socialMedia.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatefulWidget {
@@ -86,7 +87,7 @@ class _LoginFormState extends State<LoginForm> {
                 onPressed: (){
                   checkLogin(usernameController.text, passwordController.text);
                   if(!isError){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => SocialMedia())),
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Socialmedia()));
                   }
                 },
                 child: Text('LOGIN', style: textStyle,),

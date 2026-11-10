@@ -2,6 +2,7 @@ import 'package:activities/SocialMedia/model/userdata.dart';
 import 'package:activities/SocialMedia/views/friendlist.dart';
 import 'package:activities/SocialMedia/views/infoheader.dart';
 import 'package:activities/SocialMedia/views/mainheader.dart';
+import 'package:activities/SocialMedia/views/postlist.dart';
 import 'package:flutter/material.dart';
 
 class Socialmedia extends StatefulWidget {
