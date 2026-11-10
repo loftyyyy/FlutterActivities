@@ -54,7 +54,7 @@ class Userdata {
   List<Friend> friendList = [
     Friend(img: 'assets/person1.jpg', name: 'Alice'),
     Friend(img: 'assets/person2.jpg', name: 'Spane'),
-    Friend(img: 'assets/person3pg', name: 'Cameron'),
+    Friend(img: 'assets/person3.jpg', name: 'Cameron'),
     Friend(img: 'assets/person4.jpg', name: 'Jaunder'),
   ];
 

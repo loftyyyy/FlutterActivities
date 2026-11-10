@@ -109,19 +109,15 @@ class _PostlistState extends State<Postlist> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: ListView(
-        shrinkWrap: true,
-        children: widget.userdata.userList.map((userPost) {
-          return InkWell(
-            onTap: () {
-              gotoPage(context, ProfileView(userpost: userPost));
-            },
-            child: showPost(userPost),
-          );
-        }).toList(),
-      ),
+    return Column(
+      children: widget.userdata.userList.map((userPost) {
+        return InkWell(
+          onTap: () {
+            gotoPage(context, ProfileView(userpost: userPost));
+          },
+          child: showPost(userPost),
+        );
+      }).toList(),
     );
   }
 }

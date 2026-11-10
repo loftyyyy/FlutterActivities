@@ -41,7 +41,7 @@ class SocialmediaState extends State<Socialmedia> {
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Row(children: [
-              Text('Postsl', style: followTextStyle),
+              Text('Posts', style: followTextStyle),
             ],),
           ),
           const SizedBox(height: 20,),
